@@ -96,3 +96,6 @@ Thumbs.db
 #PHP
 # Thumbnails
 ._*
+
+#Composer
+vendor/
