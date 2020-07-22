@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 22, 2020 at 08:19 PM
+-- Generation Time: Jul 22, 2020 at 09:31 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -33,19 +33,17 @@ CREATE TABLE `users` (
   `lastName` varchar(25) NOT NULL,
   `userName` varchar(25) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `signUpDate` datetime NOT NULL DEFAULT current_timestamp(),
-  `isSubscribed` tinyint(4) NOT NULL DEFAULT 0
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstName`, `lastName`, `userName`, `email`, `password`, `signUpDate`, `isSubscribed`) VALUES
-(1, 'Katrina', 'Joy', 'trina', 'katrina.hitchcock@gmail.com', 'fb131bc57a477c8c9d068f1ee5622ac304195a77164ccc2d75d82dfe1a727ba8d674ed87f96143b2b416aacefb555e3045c356faa23e6d21de72b85822e39fdd', '2020-07-22 15:23:30', 0),
-(2, 'Tim', 'Burton', 'tim', 'tim@gmail.com', '22e7e9d85b7fe6004f7b9f3aa592ea9ec9ce098682e8192fa83785f1784c768d1d1ac3b8afcae88666f66aec24739ac133e9d4adc7506f1a5f1f6078cb27c674', '2020-07-22 17:04:51', 0),
-(3, 'John', 'Smith', 'john', 'john@gmail.com', '22e7e9d85b7fe6004f7b9f3aa592ea9ec9ce098682e8192fa83785f1784c768d1d1ac3b8afcae88666f66aec24739ac133e9d4adc7506f1a5f1f6078cb27c674', '2020-07-22 17:21:20', 0);
+INSERT INTO `users` (`id`, `firstName`, `lastName`, `userName`, `email`, `password`) VALUES
+(1, 'Katrina', 'Joy', 'trina', 'katrina.hitchcock@gmail.com', 'fb131bc57a477c8c9d068f1ee5622ac304195a77164ccc2d75d82dfe1a727ba8d674ed87f96143b2b416aacefb555e3045c356faa23e6d21de72b85822e39fdd'),
+(2, 'Tim', 'Burton', 'tim', 'tim@gmail.com', '22e7e9d85b7fe6004f7b9f3aa592ea9ec9ce098682e8192fa83785f1784c768d1d1ac3b8afcae88666f66aec24739ac133e9d4adc7506f1a5f1f6078cb27c674'),
+(3, 'John', 'Smith', 'john', 'john@gmail.com', '22e7e9d85b7fe6004f7b9f3aa592ea9ec9ce098682e8192fa83785f1784c768d1d1ac3b8afcae88666f66aec24739ac133e9d4adc7506f1a5f1f6078cb27c674');
 
 --
 -- Indexes for dumped tables
