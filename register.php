@@ -50,7 +50,7 @@ function getInputValue($name)
             <div class="header">
                 <img src="assets/images/logo.png" alt="site logo" title="logo" />
                 <h3> Sign Up</h3>
-                <span> to continue to Prmeiere</span>
+                <span> to continue to Premiere</span>
             </div>
 
             <form method="POST" action="">

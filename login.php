@@ -47,7 +47,7 @@ function getInputValue($name)
             <div class="header">
                 <img src="assets/images/logo.png" alt="site logo" title="logo" />
                 <h3> Sign In</h3>
-                <span> to continue to Netflix</span>
+                <span> to continue to Premiere</span>
 
 
             </div>
