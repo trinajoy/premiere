@@ -39,19 +39,27 @@ class PreviewProvider
                                 <button onClick='volumeToggle(this)'> <i class='fas fa-volume-mute'></i> </button>
                             </div>
                         </div>
-                    <div/>
+                    </div>
                 </div>";
     }
 
+    public function createEntityPreviewSqaure($entity)
+    {
+        $id = $entity->getId();
+        $thumbnail = $entity->getThumbnail();
+        $name = $entity->getName();
 
-    // <i class="fas fa-volume-up"></i>
+        return "<a href='entity.php?id=$id'>
+                    <div class='previewContainer small'>
+                        <img src='$thumbnail' title='$name'> 
+                    </div>
+                </a>";
+    }
+
 
     private function getRandomEntity()
     {
-        $query = $this->con->prepare("SELECT * FROM entities ORDER BY RAND() LIMIT 1");
-        $query->execute();
-        $row = $query->fetch(PDO::FETCH_ASSOC);
-
-        return new Entity($this->con, $row);
+        $entity = EntityProvider::getEntities($this->con, null, 1);
+        return $entity[0];
     }
 }
