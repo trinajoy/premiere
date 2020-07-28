@@ -17,7 +17,6 @@ The App is a clone of Netflix.
 ## Databse
 
 - mySQL DB hosted on heroku with clearDB addon + sequelPro
-- TO DO ---- use env variables to hide DB credentials
 
 ## Sources
 
