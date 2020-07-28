@@ -32,9 +32,15 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
     <script src="https://kit.fontawesome.com/91e380c2cc.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
-    <title> Movie App</title>
+    <title> Premiere</title>
 </head>
 
 <body>
 
     <div class="wrapper">
+
+        <?php
+        if (!isset($hideNav)) {
+            include_once('includes/navBar.php');
+        }
+        ?>
