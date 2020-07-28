@@ -351,3 +351,7 @@ button i {
 .logoContainer img {
   height: 100%;
 }
+
+.previewCategories h1 {
+  color: #efefef;
+}
