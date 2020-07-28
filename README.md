@@ -8,6 +8,11 @@ The App is a clone of Netflix.
 ## Specifications
 
 - Sign up a User
+- Filter for TV Show or Movies on home page
+- 'Replay' video on watch page
+- 'Play' next episode if a TV Show on watch page
+- 'Continue Watching' - start from last played point in video
+- Mark video as seen
 
 ## Databse
 
