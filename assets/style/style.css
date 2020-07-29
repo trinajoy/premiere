@@ -355,3 +355,18 @@ button i {
 .previewCategories h1 {
   color: #efefef;
 }
+
+.textboxContainer {
+  padding: 100px 50px;
+}
+
+.searchInput {
+  height: 50px;
+  width: 600px;
+  border: 1px solid #dedede;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
