@@ -9,3 +9,7 @@ try {
 } catch (PDOException $e) {
     exit('Connection failed:' . $e->getMessage());
 }
+
+
+
+// $con = new PDO('mysql:dbname=premiere;host=localhost', 'root', '');
