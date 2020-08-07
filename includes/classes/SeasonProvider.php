@@ -43,7 +43,7 @@ class SeasonProvider
     private function createVideoSquare($video)
     {
         $id = $video->getId();
-        $thumbnail = $video->getThumbnail();
+        $thumbnail = $video->getEpisodeThumbnail();
         $name = $video->getTitle();
         $description = $video->getDescription();
         $episodeNumber = $video->getEpisodeNumber();

@@ -48,6 +48,11 @@ class Video
         return $this->entity->getThumbnail();
     }
 
+    public function getEpisodeThumbnail()
+    {
+        return $this->sqlData["thumbnail"];
+    }
+
     public function getEpisodeNumber()
     {
         return $this->sqlData["episode"];
